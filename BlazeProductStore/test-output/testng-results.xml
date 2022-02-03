@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-03T20:11:09 GMT" name="Default suite" finished-at="2022-02-03T20:14:06 GMT" duration-ms="177824">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.blaze.test.runner.TestRunner@6379eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-02-03T20:11:09 GMT" name="Test" finished-at="2022-02-03T20:14:06 GMT" duration-ms="177824">
+      <class name="com.blaze.test.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.blaze.test.runner.TestRunner@6379eb]" started-at="2022-02-03T20:11:09 GMT" name="setUpClass" finished-at="2022-02-03T20:11:09 GMT" duration-ms="840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@696b52bc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.blaze.test.runner.TestRunner@6379eb]" started-at="2022-02-03T20:11:10 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-03T20:13:07 GMT" duration-ms="117391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SignUp With New UserName&Password And Purchase Samsung Galaxy S6"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test The Blaze SignUp And Purchase Functionality With Positive And Negative Scenarios]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.blaze.test.runner.TestRunner@6379eb]" started-at="2022-02-03T20:13:07 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-03T20:14:06 GMT" duration-ms="58682" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SignIn With Invalid User For Negative Test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test The Blaze SignUp And Purchase Functionality With Positive And Negative Scenarios]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //a[contains(text(),'Welcome')]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'STARBUST', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1eb47ed7-e4dc-4fb3-8d93-806d6f0e90fb, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:debuggerAddress: localhost:59465, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 24820, moz:profile: C:\Users\eldho\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:59465/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1eb47ed7-e4dc-4fb3-8d93-806d6f0e90fb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(text(),'Welcome')]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'STARBUST', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1eb47ed7-e4dc-4fb3-8d93-806d6f0e90fb, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:debuggerAddress: localhost:59465, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 24820, moz:profile: C:\Users\eldho\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:59465/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1eb47ed7-e4dc-4fb3-8d93-806d6f0e90fb
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy29.isDisplayed(Unknown Source)
+at com.blaze.core.CommonFunctions.isElementDisplayed(CommonFunctions.java:61)
+at com.blaze.test.steps.SignUpAndPurchaseSteps.invalidUserLoginValidation(SignUpAndPurchaseSteps.java:84)
+at ✽.User ShouldNot Be Able To Login And Receive Error Message(file:///C:/Eldho%20Jacob/Study/Auto/BlazeProductStore/src/test/java/features/SignUpAndPurchase.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.blaze.test.runner.TestRunner@6379eb]" started-at="2022-02-03T20:14:06 GMT" name="tearDownClass" finished-at="2022-02-03T20:14:06 GMT" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.blaze.test.runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Default suite -->
+</testng-results>
