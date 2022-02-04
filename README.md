@@ -12,4 +12,5 @@ UI objects are added in -->src\test\java\com\blaze\core\CommonVariables.java.
 Input data sheet is added in -->projectdirectory\test-data\TestData.xlsx
 Cucumber hooks file in -->projectdirectory\src\test\java\com\blaze\test\steps\Hooks.java extends Setup.java, which read input excel sheet from test-data folder. Also initiates webdriver for the browser before exery scenario execution.
 After each scenario execution, the driver will be closed.
-Execution result path --> projectdirectory\test-report folder - Generated after every execution with detailed html report and screenshots. In report, Scenario name is displayed as test case name.
+After project run, first scenario will be passed and second will be failed. 
+Execution result path --> projectdirectory\test-report folder - generated after every execution with detailed html result report and screenshots. In report, Scenario name is displayed as test case name.
